@@ -28,7 +28,7 @@ stages:
         secureFile: 'azure_rsa.pub'
 
     - script: |
-        echo "Copying SSH public key into Terraform module.."
+        echo "Copying SSH public key into Terraform module..."
 
         mkdir -p ~/.ssh
         cp $(download_ssh_key.secureFilePath) ~/.ssh/azure_rsa.pub
